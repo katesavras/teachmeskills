@@ -1,0 +1,333 @@
+*{
+box-sizing: border-box;
+    margin: 0 auto;
+}
+.container{
+    position: absolute;
+    width: 1401px;
+    height: 598px;
+    left: 0px;
+    top: 0px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.con1 {
+    /* WHY THIS IS AWESOME */
+
+    position: absolute;
+    width: 435px;
+    height: 43px;
+    left: 484px;
+    top: 102px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #212121;
+
+}
+.con2{
+    position: absolute;
+    width: 102px;
+    height: 2px;
+    left: 650px;
+    top: 167px;
+    text-align: center;
+
+    background: #FF8B38;
+}
+.con3{
+    position: absolute;
+    width: 389px;
+    height: 20px;
+    left: 521px;
+    top: 191px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+
+    color: #86878B;
+}
+.con4{
+    position: absolute;
+    width: 350px;
+    height: 197px;
+    left: 144px;
+    top: 277px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con4 .content{
+    position: absolute;
+    width: 349px;
+    height: 62px;
+    left: 1px;
+    top: 137px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #86878B;
+
+}
+.con4 .name{
+    /* Thoughtful Design */
+
+    position: absolute;
+    width: 178px;
+    height: 24px;
+    left: 86px;
+    top: 97px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+}
+.con4 .pic{
+    /* icon_awesome_u175 */
+
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 140px;
+    top: 0px;
+
+    border: 2px solid #FF8B38;
+    border-radius: 100px;
+
+}
+.con4 .picture{
+    /*  */
+
+    position: absolute;
+    width: 19px;
+    height: 37px;
+    left: 165px;
+    top: 17px;
+
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+
+    color: #FF8B38;
+
+
+
+
+}
+
+.con5{
+    position: absolute;
+    width: 350px;
+    height: 197px;
+    left: 526px;
+    top: 277px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con5 .content{
+    position: absolute;
+    width: 349px;
+    height: 62px;
+    left: 1px;
+    top: 137px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #86878B;
+
+}
+.con5 .name{
+    /* Thoughtful Design */
+
+    position: absolute;
+    width: 178px;
+    height: 24px;
+    left: 86px;
+    top: 97px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 32px;
+
+    color: #333333;
+
+}
+.con5 .pic{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 140px;
+    top: 0px;
+
+    border: 2px solid #FF8B38;
+    border-radius: 100px;
+}
+.con5 .picture{
+    /*  */
+
+    position: absolute;
+    width: 35px;
+    height: 37px;
+    left: 157px;
+    top: 16px;
+
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+
+    color: #FF8B38;
+
+
+}
+
+.con6{
+    position: absolute;
+    width: 350px;
+    height: 197px;
+    left: 908px;
+    top: 277px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con6 .content{
+    position: absolute;
+    width: 349px;
+    height: 62px;
+    left: 1px;
+    top: 137px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #86878B;
+
+}
+.con6 .name{
+    /* Thoughtful Design */
+
+    position: absolute;
+    width: 178px;
+    height: 24px;
+    left: 86px;
+    top: 97px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+}
+.con6 .pic{
+    /* icon_awesome_u175 */
+
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 139px;
+    top: 0px;
+
+    border: 2px solid #FF8B38;
+    border-radius: 100px;
+
+}
+
+.con6 .picture{/*  */
+
+    position: absolute;
+    width: 16px;
+    height: 37px;
+    left: 166px;
+    top: 17px;
+
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+
+    color: #FF8B38;
+
+}
