@@ -1,0 +1,33 @@
+body {
+    font-family: Trebuchet MS;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+body span {
+    color: #757575;
+}
+
+h3, h2 {
+    color: #333;
+    font-family: Trebuchet MS;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.photo {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+
+}
+
+.me {
+    background-color: #e6e6fa;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding: 20px;
+}
+
