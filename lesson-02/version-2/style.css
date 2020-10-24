@@ -1,0 +1,228 @@
+*{
+box-sizing: border-box;
+    margin: 0 auto;
+}
+.container{
+    width: 1401px;
+    height: 598px;
+    background: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.block1{
+    height: 277px;
+    text-align: center;
+}
+.con1 {
+    /* WHY THIS IS AWESOME */
+    width: 435px;
+    height: 43px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    color: #212121;
+    padding-top: 102px;
+
+}
+.con2{
+    width: 102px;
+    height: 2px;
+    text-align: center;
+    background: #FF8B38;
+    margin-top: 65px;
+}
+.con3{
+    width: 389px;
+    height: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    color: #86878B;
+    padding-top: 22px;
+}
+.block2{
+    text-align: center;
+    margin-right: 144px;
+    margin-left: 144px;
+}
+.con4{
+    width: 350px;
+    height: 197px;
+    float: left;
+    text-align: center;
+
+}
+.con4 .content{
+    width: 349px;
+    height: 62px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    color: #86878B;
+
+}
+.con4 .name{
+    /* Thoughtful Design */
+    width: 178px;
+    height: 24px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    color: #333333;
+    margin-top: 27px;
+    margin-bottom: 14px;
+
+}
+.con4 .pic{
+    /* icon_awesome_u175 */
+    width: 70px;
+    height: 70px;
+    border: 2px solid #FF8B38;
+    border-radius: 100px;
+
+}
+.con4 .picture{
+    /*  */
+
+    width: 19px;
+    height: 37px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    color: #FF8B38;
+     padding-top: 17px;
+    padding-bottom: 16px;
+}
+
+.con5{
+    width: 350px;
+    height: 197px;
+    float: left;
+    text-align: center;
+    margin-left: 31px;
+
+}
+.con5 .content{
+    width: 349px;
+    height: 62px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    color: #86878B;
+
+}
+.con5 .name{
+    /* Thoughtful Design */
+
+    width: 178px;
+    height: 24px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    color: #333333;
+    margin-top: 27px;
+    margin-bottom: 14px;
+}
+.con5 .pic{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #FF8B38;
+    border-radius: 100px;
+}
+.con5 .picture{
+    /*  */
+    width: 35px;
+    height: 37px;
+
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    color: #FF8B38;
+    padding-top: 16px;
+    padding-bottom: 17px;
+
+}
+
+.con6{
+    width: 350px;
+    height: 197px;
+    float: left;
+    text-align: center;
+    margin-left: 31px;
+}
+.con6 .content{
+    width: 349px;
+    height: 62px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    color: #86878B;
+
+}
+.con6 .name{
+    /* Thoughtful Design */
+    width: 178px;
+    height: 24px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    color: #333333;
+    margin-top: 27px;
+margin-bottom: 14px;
+
+}
+.con6 .pic{
+    /* icon_awesome_u175 */
+    width: 70px;
+    height: 70px;
+    border: 2px solid #FF8B38;
+    border-radius: 100px;
+
+}
+
+.con6 .picture{/*  */
+
+    width: 16px;
+    height: 37px;
+
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    color: #FF8B38;
+    padding-top: 17px;
+    padding-bottom: 16px;
+
+}
