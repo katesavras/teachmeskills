@@ -29,3 +29,51 @@ li{
     color: white;
 
 }
+main{
+    width: 100%;
+    padding-top: 65px;
+}
+
+.container2 {
+    height: 297px;
+    font-family: "Raleway", sans-serif;
+    color: #FFFFFF;
+    background-image: url("img/architecture.png");
+
+}
+.bgr-color{
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.58);
+}
+
+.line{
+    width: 9%;
+    height: 2px;
+    background-color: white;
+    margin-top: 22px;
+}
+.name{
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    padding-top: 54px;
+}
+.text{
+    margin-top: 22px;
+    text-align: center;
+}
+.btn{
+    margin-top: 36px;
+    text-align: center;
+}
+button {
+    padding: 12px 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+button:hover{
+    color: darkorange;
+}
