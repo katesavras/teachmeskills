@@ -2,15 +2,16 @@
     box-sizing: border-box;
     margin: 0 auto;
 }
+   /*header page */
 header{
     width: 100%;
     height: 65px;
-    background-color: black;
+    background-color: #000000;
     font-family: "Raleway", sans-serif;
     position: fixed;
 
 }
-.container{
+.container-2{
     width: 80%;
     height: 65px;
 }
@@ -32,6 +33,105 @@ li{
 main{
     width: 100%;
     padding-top: 65px;
+}
+/*first part page*/
+.container-1{
+    height: 598px;
+    background: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.block-1{
+    height: 277px;
+    text-align: center;
+}
+.con1 {
+    /* WHY THIS IS AWESOME */
+    height: 43px;
+    font-size: 36px;
+    line-height: 43px;
+    color: #212121;
+    padding-top: 102px;
+
+}
+.con2{
+    width: 9%;
+    height: 2px;
+    text-align: center;
+    background: #FF8B38;
+    margin-top: 65px;
+}
+.con3{
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #86878B;
+    padding-top: 22px;
+}
+.block-2{
+    width: 90%;
+    text-align: center;
+
+}
+.con4{
+    width: 33%;
+    /*height: 197px;*/
+    float: left;
+    text-align: center;
+
+}
+.con5{
+    width: 33%;
+    /*height: 197px;*/
+    float: left;
+    text-align: center;
+}
+.con6{
+    width: 33%;
+    /*height: 197px;*/
+    float: left;
+    text-align: center;
+}
+.content{
+    width: 95%;
+    /*height: 62px;*/
+    font-size: 14px;
+    line-height: 20px;
+    color: #86878B;
+
+}
+.names{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px 0 16px;
+    color: #333333;
+}
+.pic{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #FF8B38;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.picture{
+    width: 16px;
+    height: 37px;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FF8B38;
+    padding-top: 17px;
+
+
+}
+.pd-4{
+    padding-right:  35px;
+}
+
+/*second part page*/
+.section2{
+    width: 100%;
 }
 
 .container2 {
@@ -77,3 +177,22 @@ button {
 button:hover{
     color: darkorange;
 }
+
+/*footer page*/
+
+footer{
+    width: 100%;
+    background-color: #000000;
+    height: 100px;
+}
+.footer{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.media {
+    display: inline-block;
+
+}
+
