@@ -2,7 +2,6 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-
 .pricing {
     width: 100%;
     height: 900px;
@@ -14,21 +13,21 @@
     text-align: center;
 }
 
-.pricing__header .title {
+.pricing__title {
     font-size: 36px;
     line-height: 43px;
     color: #212121;
     padding-top: 102px;
 }
 
-.pricing__header .line {
+.pricing__line {
     width: 7%;
     height: 2px;
     background: #FF8B38;
     margin-top: 22px;
 }
 
-.pricing__header .text {
+.pricing__text {
     font-size: 14px;
     line-height: 20px;
     color: #86878B;
@@ -58,13 +57,15 @@
 }
 
 .box__price {
+    list-style: none;
+    padding-left: 0;
     color: #FFFFFF;
     background: rgba(51, 51, 51, 1);
     line-height: 24px;
 
 }
 
-.box__price p:first-child {
+.box__price li:first-child {
     border-bottom: 1px solid #c1bcbc;
     font-weight: bold;
     font-size: 20px;
@@ -72,7 +73,7 @@
     padding-bottom: 17px;
 }
 
-.box__price p:nth-child(2) {
+.box__price li:nth-child(2) {
     border-bottom: 1px solid #F5F5F5;
     font-weight: bold;
     font-size: 50px;
@@ -80,12 +81,12 @@
     padding-bottom: 38px;
 }
 
-.box__price p:nth-child(2):before {
+.box__price li:nth-child(2):before {
     content: "$";
     font-size: 25px;
 }
 
-.box__price p:last-child {
+.box__price li:last-child {
     font-style: italic;
     font-size: 14px;
     padding-top: 13px;
@@ -105,6 +106,8 @@
 }
 
 .box__options {
+    list-style: none;
+    padding-left: 0;
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
@@ -113,9 +116,10 @@
     margin-top: 1px;
 }
 
-.box__options p {
+.box__options li {
     border-bottom: 2px solid #F5F5F5;
     padding-top: 8px;
     padding-bottom: 8px;
 }
+
 
