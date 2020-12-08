@@ -5,13 +5,14 @@
 /*section reviews*/
 .reviews{
     width: 100%;
-    max-width: 1400px;
+
     background-color: #ffffff;
     font-family: "Raleway", sans-serif;
 
 
 }
 .header-reviews{
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,15 +37,17 @@
 }
 .main-reviews{
     width: 80%;
+    max-width: 1400px;
     display: flex;
     padding-top: 85px;
     padding-bottom: 102px;
 }
-.customer__review_box{
+.customer__box{
     width: 30%;
     max-width: 290px;
 }
 .customer__review{
+    position: relative;
     background: #F5F5F5;
     font-style: italic;
     font-size: 14px;
@@ -55,35 +58,66 @@
     padding-left: 12px;
 
 }
+/*.customer__review:after{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 30%;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border: 34px solid transparent;*/
+/*    border-top-color: #F5F5F5;*/
+/*    border-bottom: 0;*/
+/*    border-right: 0;*/
+/*    margin-left: -17px;*/
+/*    margin-bottom: -34px;*/
+    /*border-left: 20px solid transparent;*/
+    /*border-right: 20px solid transparent;*/
+    /*border-top: 40px solid red;*/
+/*}*/
+
 .customer__tooltip{
     padding-top: 0;
-    margin-left: -45px;
+    margin-left: 30px;
 }
+.customer__card{
+    display: flex;
+    padding-top: 25px;
 
+}
 .customer__img{
-    float: left;
-    padding-top: 30px;
+    /*float: left;*/
+    margin: 0;
+
+}
+.customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
 }
 .customer__name{
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     color: #333333;
-    padding-top: 32px;
-    padding-left: 86px;
+    margin: 0;
+    padding-left: 10px;
 
 }
 .customer__job{
     font-size: 14px;
     line-height: 19px;
     color: #86878B;
-    padding-left: 86px;
+    margin: 0;
+    padding-left: 10px;
 }
 /*section tab*/
 .tab{
     width: 100%;
     height: 600px;
-    max-width: 1400px;
+
     font-family: "Raleway", sans-serif;
     background: #F5F5F5;
     display: flex;
@@ -92,6 +126,7 @@
 }
 .main-tab{
     width: 80%;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
 }

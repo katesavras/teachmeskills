@@ -76,6 +76,7 @@ main {
     line-height: 20px;
     color: #86878B;
     padding-top: 22px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .awesome__main {
@@ -133,7 +134,7 @@ main {
     padding-right: 35px;
 }
 
-/*second part page*/
+/* section stylish*/
 .stylish {
     width: 100%;
     height: 297px;

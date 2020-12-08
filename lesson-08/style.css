@@ -158,7 +158,11 @@ header {
         height: auto;
     }
 .logo{
+
     padding: 0;
+}
+.logo__title{
+    font-size: 14px;
 }
     .topic__covid {
         font-size: 18px;
@@ -182,8 +186,51 @@ header {
 
     }
 }
+@media (max-width: 1100px) {
+    .container {
+        width: 90%;
+        max-width: 1100px;
+    }
 
-@media (max-width: 770px) {
+    .quarantine-img {
+        width: 60%;
+        max-width: 500px;
+        height: auto;
+    }
+    .logo{
+
+        padding: 0;
+    }
+    .logo__title{
+        font-size: 14px;
+    }
+    .topic__covid {
+        font-size: 18px;
+        line-height: 120%;
+
+    }
+
+    .topic__title {
+        font-size: 30px;
+        line-height: 130%;
+    }
+
+    .topic__text {
+        font-size: 16px;
+
+    }
+
+    .topic__btn {
+        font-size: 16px;
+        padding: 10px 32px;
+
+    }
+}
+
+
+
+
+@media (max-width: 900px) {
     .container {
         width: 80%;
         max-width: none;
@@ -268,7 +315,7 @@ header {
 
 
     .logo {
-        padding: 15px;
+        padding: 13px;
     }
 
     .logo__title {
@@ -296,8 +343,19 @@ header {
     }
 
 }
+@media (max-width: 350px) {
+  .logo__title{
+      font-size: 14px;
+  }
+ .navigation__btn{
+     font-size: 14px;
+     line-height: 120%;
+     color: #FF383D;
+     padding: 10px 20px;
+     margin: 0;
 
-
+ }
+}
 
 
 

@@ -1,0 +1,27 @@
+
+.header-block{
+    position: relative;
+    height: 300px;
+
+
+}
+.header-bl{
+    position: absolute;
+    top: 100px;
+    left: 280px;
+    z-index: 100;
+}
+.bg{
+    background-color: #4eb7cd;
+    width: 100%;
+    height: 300px;
+}
+.video{
+    width: 400px;
+    height: 280px;
+
+
+}
+.color {
+    background-color: #f3efef;
+}
