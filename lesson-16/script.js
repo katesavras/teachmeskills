@@ -1,8 +1,8 @@
 function checks() {
-    let surName = validate("surname");
-    let yourName = validate("name");
-    let middleName = validate("middlename");
-    let age = validateAge();
+    let surName = validateString("What is your surname?");
+    let yourName = validateString("What is your name?");
+    let middleName = validateString("What is your middle name?");
+    let age = validateNumber("How old are you?");
 
     const gender = confirm("Are your gender-man?") ? "man" : "woman";
     let retired;
@@ -15,7 +15,7 @@ function checks() {
     print(surName, yourName, middleName, age, gender, retired);
 }
 
-const print = (surName, yourName, middleName, age, gender, retired) => {
+function print(surName, yourName, middleName, age, gender, retired) {
     alert(`ФИО:  ${surName} ${yourName} ${middleName},
            Возраст: ${age},
            Ваш пол: ${gender},
@@ -23,20 +23,21 @@ const print = (surName, yourName, middleName, age, gender, retired) => {
            Вы на пенсии: ${retired}
    `);
 }
-checks();
 
-function validate(name) {
+function validateString(question) {
     let result = '';
     while (result === '' || result === null) {
-        result = prompt(`What is your ${name}?`, "");
+        result = prompt(`${question}?`, "");
     }
     return result
 }
 
-function validateAge() {
+function validateNumber(question) {
     let result = NaN;
     while (isNaN(result)) {
-        result = +prompt(`How old are you?`, "");
+        result = +prompt(`${question}`, "");
     }
     return result;
 }
+
+checks();
