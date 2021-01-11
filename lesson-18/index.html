@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<form action="" class="form">
+
+    <label for="name">Name:
+        <input type="text" id="name">
+    </label>
+    <br>
+    <br>
+    <label for="age">Age:
+        <input type="text" id="age"  oninput="validateAge()">
+    </label>
+    <br>
+    <br>
+    <label for="birthDate">Birth date:
+        <input type="date" id="birthDate" value="">
+    </label>
+    <br>
+    <br>
+    <label for="education">Choose an education:
+        <select name="education" id="education">
+            <option value="primary">Primary</option>
+            <option value="secondary">Secondary</option>
+            <option value="higher">Higher</option>
+        </select>
+    </label>
+    <br>
+    <br>
+    <input type="radio" name="gender" id="man" value="man">
+    <label for="man">Man</label>
+    <input type="radio" name="gender" id="woman" value="woman">
+    <label for="woman">Woman</label>
+    <br>
+    <br>
+</form>
+<button class="btnSubmit">Submit</button>
+
+
+<div class="modal">
+    <p class="modalText" id="nameValue"></p>
+    <p class="modalText" id="ageValue"></p>
+    <p class="modalText" id="dataValue"></p>
+    <p class="modalText" id="educationValue"></p>
+    <p class="modalText" id="genderValue"></p>
+    <button id="close">Close</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
