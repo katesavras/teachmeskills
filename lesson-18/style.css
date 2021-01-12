@@ -1,28 +1,63 @@
 
-body{
+.page {
     height: 500px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.form{
+
+.form {
     width: 300px;
     height: auto;
     border: 2px solid #c3c2c1;
     border-radius: 5px;
     background-color: #dedcda;
     padding: 20px;
-
     font-size: 20px;
 
 }
 
-.modal{
-    display: none;
-    border: 2px solid  #3ac18c;
-    width: 400px;
-    height: 200px;
+.btnSubmit {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: 2px solid #c3c2c1;
+    border-radius: 5px;
+    background-color: #dedcda;
+    font-size: 20px;
 
 }
 
+.btnSubmit:hover {
+    background-color: #efd2b5;
+}
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modalText {
+    background-color: #fdd7d7;
+    margin: 15% auto;
+    padding: 10px;
+    border: 1px solid #f80d0d;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+
+}
