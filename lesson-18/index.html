@@ -13,10 +13,11 @@
         <label for="name">Name:
             <input type="text" id="name">
         </label>
+        <small class="error">This field is required</small>
         <br>
         <br>
         <label for="age">Age:
-            <input type="text" id="age" oninput="validateAge()">
+            <input type="text" id="age" onkeyup="validateAge()">
         </label>
         <br>
         <br>
@@ -28,15 +29,15 @@
         <label for="education">Choose an education:
             <select name="education" id="education">
                 <option value="primary">Primary</option>
-                <option value="secondary">Secondary</option>
+                <option value="secondary" selected>Secondary</option>
                 <option value="higher">Higher</option>
             </select>
         </label>
         <br>
         <br>
-        <input type="radio" name="gender" id="man" value="man">
+        <input type="radio" name="gender" id="man" value="Man" checked>
         <label for="man">Man</label>
-        <input type="radio" name="gender" id="woman" value="woman">
+        <input type="radio" name="gender" id="woman" value="Woman">
         <label for="woman">Woman</label>
         <br>
         <br>
