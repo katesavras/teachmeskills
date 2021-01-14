@@ -316,52 +316,52 @@ showAge.addEventListener("click", () => {
 // })
 // console.log(sum);
 // console.log(typeof sum);
-
-
-class Storage {
-    constructor() {
-        this.drinkStorage = {};
-    }
-    addValue(key, value) {
-     this.drinkStorage[key] = value;
-     console.log(this.drinkStorage);
-
-     return this.drinkStorage;
-
-    }
-
-    getValue(key) {
-        const result = this.drinkStorage[key];
-        console.log(this.drinkStorage[key]);
-
-        if (result) {
-            console.log(result);
-            return result;
-        }else{
-            console.log(`${key} is empty`);
-            return false;
-        }
-    }
-
-    getKeys() {
-        console.log(Object.keys(this.drinkStorage))
-    }
-
-    deleteValue(key) {
-        if (this.drinkStorage[key]) {
-           delete this.drinkStorage[key];
-            console.log(true);
-            return true;
-        }else{
-            console.log(false);
-            return false;
-        }
-    }
-
-    reset() {
-        this.drinkStorage ={};
-    }
-}
+//
+//
+// class Storage {
+//     constructor() {
+//         this.drinkStorage = {};
+//     }
+//     addValue(key, value) {
+//      this.drinkStorage[key] = value;
+//      console.log(this.drinkStorage);
+//
+//      return this.drinkStorage;
+//
+//     }
+//
+//     getValue(key) {
+//         const result = this.drinkStorage[key];
+//         console.log(this.drinkStorage[key]);
+//
+//         if (result) {
+//             console.log(result);
+//             return result;
+//         }else{
+//             console.log(`${key} is empty`);
+//             return false;
+//         }
+//     }
+//
+//     getKeys() {
+//         console.log(Object.keys(this.drinkStorage))
+//     }
+//
+//     deleteValue(key) {
+//         if (this.drinkStorage[key]) {
+//            delete this.drinkStorage[key];
+//             console.log(true);
+//             return true;
+//         }else{
+//             console.log(false);
+//             return false;
+//         }
+//     }
+//
+//     reset() {
+//         this.drinkStorage ={};
+//     }
+// }
 
 // const drink = new Storage();
 // drink.addValue('vodka', 'alco');
@@ -432,9 +432,9 @@ class Storage {
 // document.body.innerHTML = "<div>Rfss</div>";
 // document.body.innerHTML += "<div>Rfss</div>";
 // console.log (document.body.textContent);
-const showAge =document.getElementById("showAge");
-showAge.addEventListener('click', () =>
-{
-    const inputText = document.getElementById("inputText");
-    console.log(inputText.value);
-});
+// const showAge =document.getElementById("showAge");
+// showAge.addEventListener('click', () =>
+// {
+//     const inputText = document.getElementById("inputText");
+//     console.log(inputText.value);
+// });

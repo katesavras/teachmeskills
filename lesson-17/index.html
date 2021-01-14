@@ -12,33 +12,80 @@
 <!--</div>-->
 <!--<div class="abc"></div>-->
 <!--<div id="cub"></div>-->
-<table id="table">
-    <tr>
-        <td>Ваш возраст:</td>
+<!--<table id="table">-->
+<!--    <tr>-->
+<!--        <td>Ваш возраст:</td>-->
 
-        <td>
-            <label>
-                <input type="radio" name="age" value="young" checked> младше 18
-            </label>
-            <label>
-                <input type="radio" name="age" value="mature"> от 18 до 50
-            </label>
-            <label>
-                <input type="radio" name="age" value="senior"> старше 60
-            </label>
-        </td>
-    </tr>
-</table>
+<!--        <td>-->
+<!--            <label>-->
+<!--                <input type="radio" name="age" value="young" checked> младше 18-->
+<!--            </label>-->
+<!--            <label>-->
+<!--                <input type="radio" name="age" value="mature"> от 18 до 50-->
+<!--            </label>-->
+<!--            <label>-->
+<!--                <input type="radio" name="age" value="senior"> старше 60-->
+<!--            </label>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
 
-<script>
-    let inputs = table.getElementsByTagName('input');
+<!--<script>-->
+<!--    let inputs = table.getElementsByTagName('input');-->
 
-    for (let input of inputs) {
-        console.log( input.value + ': ' + input.checked );
+<!--    for (let input of inputs) {-->
+<!--        console.log( input.value + ': ' + input.checked );-->
 
-    }
-</script>
+<!--    }-->
+<!--</script>-->
 
 <!--<script src="script.js"></script>-->
+<ul id="list">
+    <li>Животные
+        <ul>
+            <li>Млекопитающие
+                <ul>
+                    <li>Коровы</li>
+                    <li>Ослы</li>
+                    <li>Собаки</li>
+                    <li>Тигры</li>
+                </ul>
+            </li>
+            <li>Другие
+                <ul>
+                    <li>Змеи</li>
+                    <li>Птицы</li>
+                    <li>Ящерицы</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Рыбы
+        <ul>
+            <li>Аквариумные
+                <ul>
+                    <li>Гуппи</li>
+                    <li>Рыба-ангел</li>
+                </ul>
+            </li>
+            <li>Морские
+                <ul>
+                    <li>Морская форель</li>
+                </ul>
+            </li>
+        </ul>
+
+    </li>
+</ul>
+
+<script>
+     for( let li of document.querySelectorAll("li")){
+         let titles = li.firstChild.data;
+         console.log(titles);
+     }
+
+</script>
+
+
 </body>
 </html>
