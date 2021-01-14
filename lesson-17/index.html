@@ -5,13 +5,40 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="inputText"/>
-<button id="showAge">Show age</button>
+<!--<input type="text" id="inputText"/>-->
+<!--<button id="showAge">Show age</button>-->
 <!--<div class="abc">-->
 <!--    <ul><li></li></ul>-->
 <!--</div>-->
 <!--<div class="abc"></div>-->
 <!--<div id="cub"></div>-->
-<script src="script.js"></script>
+<table id="table">
+    <tr>
+        <td>Ваш возраст:</td>
+
+        <td>
+            <label>
+                <input type="radio" name="age" value="young" checked> младше 18
+            </label>
+            <label>
+                <input type="radio" name="age" value="mature"> от 18 до 50
+            </label>
+            <label>
+                <input type="radio" name="age" value="senior"> старше 60
+            </label>
+        </td>
+    </tr>
+</table>
+
+<script>
+    let inputs = table.getElementsByTagName('input');
+
+    for (let input of inputs) {
+        console.log( input.value + ': ' + input.checked );
+
+    }
+</script>
+
+<!--<script src="script.js"></script>-->
 </body>
 </html>

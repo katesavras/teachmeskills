@@ -1,35 +1,38 @@
-let age = document.querySelector("#age");
-let name = document.querySelector("#name");
-let birthDate = document.querySelector("#birthDate");
-let education = document.getElementById("education");
-let btnSubmit = document.querySelector(".btnSubmit");
-let ageValue = document.querySelector("#ageValue");
-let nameValue = document.querySelector("#nameValue");
-let genderValue = document.querySelector("#genderValue");
-let educationValue = document.querySelector("#educationValue");
-let dataValue = document.querySelector("#dataValue");
-let close = document.querySelector("#close");
-let modal = document.querySelector(".modal");
-let form = document.querySelector(".form");
-let error = document.querySelector(".error");
+const age = document.querySelector("#age");
+const name = document.querySelector("#name");
+const birthDate = document.querySelector("#birthDate");
+const education = document.getElementById("education");
+
+
+const btnSubmit = document.querySelector(".btnSubmit");
+const close = document.querySelector("#close");
+const modal = document.querySelector(".modal");
+const form = document.querySelector(".form");
+const error = document.querySelector(".error");
 
 
 btnSubmit.addEventListener("click", () => {
+    const ageValue = document.querySelector("#ageValue");
+    const nameValue = document.querySelector("#nameValue");
+    const genderValue = document.querySelector("#genderValue");
+    const educationValue = document.querySelector("#educationValue");
+    const dataValue = document.querySelector("#dataValue");
 
-    if(!validateName() && !validateAge()){
+
+    if (!validateName() && !validateAge()) {
         nameValue.innerHTML = `Name: ${name.value}`;
         ageValue.innerHTML = `Age: ${age.value} years old`;
 
-        let educationOption = education.options[education.selectedIndex].text;
+        const educationOption = education.options[education.selectedIndex].text;
         educationValue.innerHTML = `Education: ${educationOption}`;
 
-        let gender = document.querySelector('input[name = "gender"]:checked').value;
+        const gender = document.querySelector('input[name = "gender"]:checked').value;
         genderValue.innerHTML = `Gender: ${gender}`;
 
         dataValue.innerHTML = `Birth date: ${birthDate.value}`;
 
         modal.style.display = "block"
-}
+    }
 });
 
 let validateName = () => {
@@ -39,7 +42,7 @@ let validateName = () => {
         error.style.display = "block";
         return true
     } else {
-        return  false
+        return false
     }
 }
 
