@@ -10,6 +10,7 @@ let curTitle;
 let curDesc;
 let arr = [];
 
+
 btnSubmit.addEventListener("click", () => {
     const today = new Date();
     arr.push({title: inputTitle.value, description: inputDesc.value, date: today.toLocaleString()});
@@ -18,7 +19,7 @@ btnSubmit.addEventListener("click", () => {
 
 let recreateCards = () => {
     card.innerHTML = "";
-    for (let element of arr) {
+    arr.forEach((element) => {
         let divGroup = document.createElement('div');
         card.prepend(divGroup);
         let btnDelete = document.createElement('button');
@@ -51,9 +52,9 @@ let recreateCards = () => {
 
         addHoverEffect(titleValue, descriptionValue);
         form.reset();
-    }
-}
+    })
 
+}
 
 card.addEventListener("click", (event) => {
     if (event.target.textContent === "Delete") {
@@ -66,6 +67,10 @@ card.addEventListener("click", (event) => {
         let curParent = event.target.parentElement;
         curTitle = curParent.childNodes[0].innerText;
         curDesc = curParent.childNodes[1].innerText;
+
+        document.querySelector("#titleNew").value = curTitle;
+        document.querySelector("#descNew").value = curDesc;
+
         modal.style.display = "block";
     }
 });
@@ -89,7 +94,6 @@ const editElement = (curTitle, curDesc, newTitle, newDesc) => {
 
         }
     }
-
     recreateCards();
 };
 
@@ -98,7 +102,6 @@ btnOk.addEventListener("click", () => {
     let newDesc = document.querySelector("#descNew").value;
     modal.style.display = "none";
     editElement(curTitle, curDesc, newTitle, newDesc);
-
 });
 
 let addHoverEffect = (title, description) => {

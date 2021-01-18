@@ -39,12 +39,14 @@ div {
     color: #3c763d;
     background-color: #b0c3a1;
     margin: 10px;
-   transition: transform 5ms;
+    transition: transform 5ms;
 }
-.btnSubmit:hover{
+
+.btnSubmit:hover {
     transform: scale(1.05);
     box-shadow: none;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -58,7 +60,7 @@ div {
     background-color: rgba(160, 159, 159, 0.4);
 }
 
-.modal__content{
+.modal__content {
     background-color: #f3f3d7;
     margin: 15% auto;
     padding: 10px;
@@ -71,7 +73,8 @@ div {
     font-size: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.btnOk{
+
+.btnOk {
     padding: 10px 30px;
     border: 1px solid #eaeae6;
     border-radius: 4px;
@@ -79,24 +82,28 @@ div {
     background-color: #ddddda;
     margin: 10px;
 }
-.btnOk:hover{
+
+.btnOk:hover {
     box-shadow: none;
 }
 
-input{
+input {
     border: 1px solid #bab9b8;
     border-radius: 4px;
     height: 25px;
 }
-input:focus{
-    outline:none;
+
+input:focus {
+    outline: none;
     border: 1px solid #a9aca8;
 }
-button:hover{
+
+button:hover {
     box-shadow: 0 4px 4px 0 rgb(167, 207, 167);
 
 }
-button:focus{
-    outline:none;
+
+button:focus {
+    outline: none;
     border: 1px solid #3c763d;
 }
