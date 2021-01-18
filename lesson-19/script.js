@@ -11,7 +11,8 @@ let curDesc;
 let arr = [];
 
 btnSubmit.addEventListener("click", () => {
-    arr.push({title: inputTitle.value, description: inputDesc.value});
+    const today = new Date();
+    arr.push({title: inputTitle.value, description: inputDesc.value, date: today.toLocaleString()});
     recreateCards();
 });
 
@@ -20,7 +21,6 @@ let recreateCards = () => {
     for (let element of arr) {
         let divGroup = document.createElement('div');
         card.prepend(divGroup);
-
         let btnDelete = document.createElement('button');
         btnDelete.classList.add("text__element")
         btnDelete.innerHTML = "Delete";
@@ -32,15 +32,24 @@ let recreateCards = () => {
         btnEdit.innerHTML = "Edit";
         divGroup.prepend(btnEdit);
 
+
+        let date = document.createElement('p');
+        date.classList.add("text__element")
+        date.innerHTML = `${element.date}`;
+        divGroup.prepend(date);
+
         let descriptionValue = document.createElement('p');
-        descriptionValue.classList.add("text__element")
+        descriptionValue.classList.add("text__element");
+
         descriptionValue.innerHTML = `${element.description}`;
         divGroup.prepend(descriptionValue);
 
         let titleValue = document.createElement('p');
-        titleValue.classList.add("text__element")
+        titleValue.classList.add("text__element");
         titleValue.innerHTML = `${element.title}`;
         divGroup.prepend(titleValue);
+
+        addHoverEffect(titleValue, descriptionValue);
         form.reset();
     }
 }
@@ -77,8 +86,10 @@ const editElement = (curTitle, curDesc, newTitle, newDesc) => {
             arr[i].title = newTitle;
             arr[i].description = newDesc;
             break;
+
         }
     }
+
     recreateCards();
 };
 
@@ -87,4 +98,25 @@ btnOk.addEventListener("click", () => {
     let newDesc = document.querySelector("#descNew").value;
     modal.style.display = "none";
     editElement(curTitle, curDesc, newTitle, newDesc);
+
 });
+
+let addHoverEffect = (title, description) => {
+    title.addEventListener("mouseover", (eve) => {
+        eve.target.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2)";
+
+    });
+    title.addEventListener("mouseleave", (eve) => {
+        eve.target.style.boxShadow = "none";
+
+    });
+
+    description.addEventListener("mouseover", (eve) => {
+        eve.target.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2)";
+
+    });
+    description.addEventListener("mouseleave", (eve) => {
+        eve.target.style.boxShadow = "none";
+
+    });
+}
