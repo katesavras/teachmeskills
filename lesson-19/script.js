@@ -55,7 +55,6 @@ let recreateCards = () => {
     })
 
 }
-
 card.addEventListener("click", (event) => {
     if (event.target.textContent === "Delete") {
         let curParent = event.target.parentElement;
