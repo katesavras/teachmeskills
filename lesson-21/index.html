@@ -8,16 +8,16 @@
 <body>
 <form action="">
     <label for="name">Name:</label>
-    <input type="text"  id="name">
+    <input type="text" id="name">
     <br>
     <label for="birthday">Birthday:</label>
-    <input type="number"  id="birthday">
+    <input type="number" id="birthday">
     <br>
     <label for="today">Date of employment:</label>
-    <input type="date"  id="today">
+    <input type="date" id="today">
     <br>
     <label for="salary">Salary $:</label>
-    <input type="text"  id="salary">
+    <input type="text" id="salary">
 </form>
 
 <button id="btnAdd">Add</button>
@@ -28,17 +28,22 @@
     <tr>
         <th>&nbsp;</th>
         <th>Name</th>
-        <th>Birthday</th>
-        <th>Date of employment <button id="sortDate">&#8645;</button> </th>
-        <th>Salary  <button id="sortSalary">&#8645;</button> </th>
+        <th>Birthday
+            <button id="sortBirthday">&#8645;</button>
+        </th>
+        <th>Date of employment
+            <button id="sortDate">&#8645;</button>
+        </th>
+        <th>Salary
+            <button id="sortSalary">&#8645;</button>
+        </th>
     </tr>
     <tbody class="tab_body">
 
     </tbody>
-<!--    <tr>-->
-<!--        <td><input type="checkbox" name="key" class="key"></td> <td></td> <td></td> <td></td> <td></td>-->
-<!--    </tr>-->
+
 </table>
+<br>
 <button id="btnDelete">Delete</button>
 <button id="btnCount">Count sum</button>
 <script src="script.js"></script>
