@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <label for="title">Title:</label>
+    <input type="text" id="title">
+    <br>
+    <label for="task">Task:</label>
+    <input type="text" id="task">
+</form>
+<button id="submit">Submit</button>
+
+<div class="cards__wrapper">
+    <div class="cards">
+        <p class="card__title">To Do</p>
+        <div id="toDo"></div>
+    </div>
+
+    <div class="cards">
+        <p class="card__title">In Progress</p>
+        <div id="progress"></div>
+    </div>
+
+    <div class="cards">
+        <p class="card__title">Done</p>
+        <div id="done"></div>
+    </div>
+
+    <div class="cards">
+        <p class="card__title">Deleted</p>
+        <div id="delete"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

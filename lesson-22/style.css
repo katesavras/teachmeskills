@@ -1,0 +1,47 @@
+form{
+    border: 1px solid #bebcbe;
+    background-color: #d1ced4;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+}
+input{
+    margin: 10px;
+    border: 1px solid #edeaef;
+    background-color: #f9f7fc;
+    border-radius: 5px;
+}
+#submit{
+    margin: 20px;
+    padding: 8px 13px;
+    border: 1px solid #debef3;
+    background-color: #e6dff1;
+    border-radius: 5px;
+}
+
+.cards__wrapper{
+    display: flex;
+}
+.card__title{
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    color: #565656;
+    padding-left: 20px;
+}
+
+.cards{
+    border: 1px solid #cf9ffa;
+    background-color: #dbc8f5;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+.card{
+    border: 1px solid #e2e2e3;
+    background-color: #f1f0f1;
+    border-radius: 5px;
+    margin: 10px;
+}
