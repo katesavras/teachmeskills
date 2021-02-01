@@ -1,16 +1,17 @@
+let cardWrapper = document.querySelector(".cards__wrapper")
+
+let toDo = cardWrapper.querySelector("#toDo");
+let progress = cardWrapper.querySelector("#progress");
+let done = cardWrapper.querySelector("#done");
+let del = cardWrapper.querySelector("#delete");
+
 let task = document.querySelector("#task");
 let title = document.querySelector("#title");
-
-let toDo = document.querySelector("#toDo");
-let progress = document.querySelector("#progress");
-let done = document.querySelector("#done");
-let del = document.querySelector("#delete");
 
 let submit = document.querySelector("#submit");
 let form = document.querySelector("form")
 
 let arr = [];
-const arrDelete = [];
 let counter = 0;
 
 const status = {
@@ -32,8 +33,8 @@ let addCard = (element) => {
     toDo.innerHTML = " ";
     toDo.innerHTML += `
      <div class="card" id=${element.id}>
-     <p id="curTitle">${element.title}</p>
-     <p id="curTask">${element.task}</p>
+     <p id="curTitle" contenteditable="false">${element.title}</p>
+     <p id="curTask" contenteditable="false">${element.task}</p>
      <button id="editor">&#9998;</button>
      <button id="process">&#10004;</button>
      <button id="btnDel">&#10006;</button>
@@ -42,8 +43,7 @@ let addCard = (element) => {
 }
 
 
-toDo.addEventListener("click", (event) => {
-
+cardWrapper.addEventListener("click", (event) => {
 
     if (event.target.closest("#btnDel")) {
         let parentDelete = event.target.parentElement;
@@ -53,28 +53,95 @@ toDo.addEventListener("click", (event) => {
     }
 
     if (event.target.closest("#editor")) {
+        let parentEdit = event.target.parentElement;
+        let parentId = parentEdit.id;
+        let curTitle = parentEdit.querySelector("#curTitle");
+        let curTask = parentEdit.querySelector("#curTask");
+        curTitle.contentEditable = "true";
+        curTask.contentEditable = "true";
+
+        curTitle.addEventListener("blur", () => {
+            let newTitle = curTitle.textContent;
+            console.log(newTitle);
+            editTitle(parentId, newTitle);
+        })
+        curTask.addEventListener("blur", () => {
+            let newTask = curTask.textContent;
+            console.log(newTask);
+            editTask(parentId, newTask);
+        })
 
     }
 
     if (event.target.closest("#process")) {
-
+        let parentProgress = event.target.parentElement;
+        let parentId = parentProgress.id;
+        progressCard(parentId, parentProgress);
+        // parentProgress.remove();
     }
 })
 
-let deleteCard = (parentId) => {
+const deleteCard = (parentId) => {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].id === Number(parentId)) {
-            arr[i].status = status.DELETED;
-            del.innerHTML += `
-                   <div class="card" id=${arr[i].id}>
-                   <p id="curTitle">${arr[i].title}</p>
-                   <p id="curTask">${arr[i].task}</p>
+            if (arr[i].status === status.DELETED) {
+                arr.splice(i, 1);
+            } else {
+                arr[i].status = status.DELETED;
+                appendElement(del, i);
+                break;
+            }
+
+        }
+    }
+
+}
+
+const progressCard = (parentId, parentEle) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].id === Number(parentId)) {
+            if (arr[i].status === status.TODO) {
+                arr[i].status = status.IN_PROGRESS;
+                appendElement(progress, i);
+                parentEle.remove();
+                break;
+            } else if (arr[i].status === status.IN_PROGRESS) {
+                arr[i].status = status.DONE;
+                appendElement(done, i);
+                parentEle.remove();
+                break;
+            } else if (arr[i].status === status.DONE) {
+                break;
+            }
+
+        }
+    }
+
+}
+const editTitle = (parentId, newTitle) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].id === Number(parentId)) {
+            arr[i].title = newTitle;
+            break;
+        }
+    }
+}
+const editTask = (parentId, newTask) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].id === Number(parentId)) {
+            arr[i].task = newTask;
+            break;
+        }
+    }
+}
+
+const appendElement = (element, index) => {
+    element.innerHTML += `
+                   <div class="card" id=${arr[index].id}>
+                   <p id="curTitle">${arr[index].title}</p>
+                   <p id="curTask">${arr[index].task}</p>
                    <button id="editor">&#9998;</button>
                    <button id="process">&#10004;</button>
                    <button id="btnDel">&#10006;</button>
                     </div>`
-            break;
-        }
-    }
-
 }

@@ -45,3 +45,9 @@ input{
     border-radius: 5px;
     margin: 10px;
 }
+.cur_title{
+    width: 200px ;
+    border: 1px solid #dc1ee9;
+    background-color: #a161ee;
+    color: white;
+}
