@@ -57,17 +57,16 @@ cardWrapper.addEventListener("click", (event) => {
         let parentId = parentEdit.id;
         let curTitle = parentEdit.querySelector("#curTitle");
         let curTask = parentEdit.querySelector("#curTask");
+        parentEdit.style.backgroundColor = "green"
         curTitle.contentEditable = "true";
         curTask.contentEditable = "true";
 
         curTitle.addEventListener("blur", () => {
             let newTitle = curTitle.textContent;
-            console.log(newTitle);
             editTitle(parentId, newTitle);
         })
         curTask.addEventListener("blur", () => {
             let newTask = curTask.textContent;
-            console.log(newTask);
             editTask(parentId, newTask);
         })
 
@@ -77,7 +76,6 @@ cardWrapper.addEventListener("click", (event) => {
         let parentProgress = event.target.parentElement;
         let parentId = parentProgress.id;
         progressCard(parentId, parentProgress);
-        // parentProgress.remove();
     }
 })
 
@@ -88,6 +86,7 @@ const deleteCard = (parentId) => {
                 arr.splice(i, 1);
             } else {
                 arr[i].status = status.DELETED;
+
                 appendElement(del, i);
                 break;
             }
@@ -145,3 +144,4 @@ const appendElement = (element, index) => {
                    <button id="btnDel">&#10006;</button>
                     </div>`
 }
+
