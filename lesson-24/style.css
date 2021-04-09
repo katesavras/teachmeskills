@@ -1,0 +1,9 @@
+table{
+    width: 700px; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+}
+td, tr{
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid #1b5bbc; /* Параметры рамки */
+    height: 30px;
+}
